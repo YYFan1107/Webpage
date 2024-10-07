@@ -1,0 +1,125 @@
+body {
+    background-image: linear-gradient(#25B9DA, #255EDA);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    margin: 20px auto;
+    width: calc(100% - 500px);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header img {
+    margin: 0;
+}
+
+nav {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 25px;
+    background-color: #ffffff33;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s; 
+    box-shadow: 0 4px 8px #00000033; 
+}
+
+nav ul li a:hover {
+    background-color: #ffffff80;
+    color: #000;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px #0000004d;
+}
+
+.overview-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.overview-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.overview-image {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0000001a;
+}
+
+.overview-text {
+    width: 55%;
+}
+
+.feature-section {
+    padding: 40px 0;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #00000033;
+}
+
+.description-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #00000033;
+    display: none;
+}
+
+.feature-item:hover .description-box {
+    display: block;
+}
